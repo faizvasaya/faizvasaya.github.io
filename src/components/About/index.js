@@ -1,25 +1,25 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 import {
   faAngular,
-  faCss3,
-  faGitAlt,
+  faBitcoin,
   faHtml5,
   faJsSquare,
+  faNodeJs,
   faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
-import Loader from 'react-loaders'
+} from "@fortawesome/free-brands-svg-icons";
+import AnimatedLetters from "../AnimatedLetters";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.scss";
+import Loader from "react-loaders";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -28,23 +28,28 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={15}
             />
           </h1>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm very ambitious, passionate and a self-taught full-stack
+            web/decentralized application developer and a freelance software
+            engineer from Pune, India.
           </p>
           <p align="LEFT">
             I'm quietly confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            My passion for software lies in dreaming up ideas and making them
+            come true with elegant user interfaces and scalable backend
+            architectures.
+          </p>
+          <p>
+            I have demonstratable experience and solid expertise in creating end
+            to end Web2.0 and Web3.0 applications. In addition to that, I am a
+            Bibliophile, a Health freak, and a LinkedIn Influencer !!!
           </p>
         </div>
 
@@ -57,7 +62,7 @@ const About = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faBitcoin} color="#F7931A" />
             </div>
             <div className="face4">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
@@ -66,14 +71,14 @@ const About = () => {
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faNodeJs} color="#68A063" />
             </div>
           </div>
         </div>
       </div>
-      <Loader type='pacman' />
+      <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

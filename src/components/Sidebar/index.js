@@ -1,22 +1,21 @@
-import { Link, NavLink } from 'react-router-dom'
-import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from "react-router-dom";
+import "./index.scss";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import Logo from '../../assets/images/faizal-logo.png'
 import {
   faGithub,
   faLinkedin,
   faMedium,
   faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => (
   <div className="nav-bar">
     {/* Sidebar Logo */}
     <Link className="logo" to="/">
-      <img src={LogoS} alt="logo" />
-      <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+      <img src={Logo} alt="logo" />
     </Link>
     {/* Side bar middle menu items */}
     <nav>
@@ -80,6 +79,6 @@ const Sidebar = () => (
       </li>
     </ul>
   </div>
-)
+);
 
-export default Sidebar
+export default Sidebar;
