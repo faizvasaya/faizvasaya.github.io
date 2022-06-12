@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.02b20d3c.css",
-    "main.js": "/static/js/main.702f863d.js",
+    "main.css": "/static/css/main.11860b49.css",
+    "main.js": "/static/js/main.04bfa7df.js",
     "static/js/787.db4501a5.chunk.js": "/static/js/787.db4501a5.chunk.js",
     "static/media/faizal-logo.png": "/static/media/faizal-logo.0a829f8e83689b88a5f5.png",
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.02b20d3c.css.map": "/static/css/main.02b20d3c.css.map",
-    "main.702f863d.js.map": "/static/js/main.702f863d.js.map",
+    "main.11860b49.css.map": "/static/css/main.11860b49.css.map",
+    "main.04bfa7df.js.map": "/static/js/main.04bfa7df.js.map",
     "787.db4501a5.chunk.js.map": "/static/js/787.db4501a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02b20d3c.css",
-    "static/js/main.702f863d.js"
+    "static/css/main.11860b49.css",
+    "static/js/main.04bfa7df.js"
   ]
 }
