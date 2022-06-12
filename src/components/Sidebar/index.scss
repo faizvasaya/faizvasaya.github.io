@@ -84,6 +84,18 @@
       }
     }
 
+    a.resume-link {
+      &:after {
+        content: 'RESUME';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOIO';
+      }
+    }
+
     a.active {
       svg {
         color: #ffd700;

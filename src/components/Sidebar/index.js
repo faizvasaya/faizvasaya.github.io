@@ -2,8 +2,14 @@ import { NavLink } from "react-router-dom";
 import "./index.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
-import Logo from '../../assets/images/faizal-logo.png'
+import {
+  faEnvelope,
+  faFile,
+  faHome,
+  faSuitcase,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import Logo from "../../assets/images/faizal-logo.png";
 import {
   faGithub,
   faLinkedin,
@@ -33,11 +39,27 @@ const Sidebar = () => (
       <NavLink
         exact="true"
         activeclassname="active"
+        className="portfolio-link"
+        to="/portfolio"
+      >
+        <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        activeclassname="active"
         className="contact-link"
         to="/contact"
       >
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
+      <a
+        target="_blank"
+        href="https://drive.google.com/file/d/1s73J6y4s3OcwGjvKey_GdR2WYF2xCvb3/view?usp=sharing"
+        rel="noreferrer"
+        className="resume-link"
+      >
+        <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
+      </a>
     </nav>
     {/* Side bar bottom menu items */}
     <ul>

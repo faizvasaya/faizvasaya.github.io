@@ -43,11 +43,15 @@ const Home = () => {
             <span className={letterClass}>I</span>
             <span className={letterClass}>'m</span>
             {nameArray.map((letter) => (
-              <span className={letterClass}>{letter}</span>
+              <span key={`${letter}${Math.random()}`} className={letterClass}>
+                {letter}
+              </span>
             ))}
             <br />
             {jobArray.map((letter) => (
-              <span className={letterClass}>{letter}</span>
+              <span key={`${letter}${Math.random()}`} className={letterClass}>
+                {letter}
+              </span>
             ))}
           </h1>
           <h2>Full stack developer / Dapp developer / LinkedIn Influencer</h2>
